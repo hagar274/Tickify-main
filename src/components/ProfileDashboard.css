@@ -1,0 +1,275 @@
+/* Dashboard Layout */
+.dashboard-layout {
+  width: 90vw;
+  max-width: none;
+  margin: 40px 0 0 0;
+  background: #f8fafd;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(25, 118, 210, 0.08);
+  padding: 0 0 40px 0;
+  min-height: 70vh;
+}
+
+/* Tab Bar */
+.dashboard-tabs {
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid #e3eaf3;
+  background: #fff;
+  border-radius: 18px 18px 0 0;
+  overflow-x: auto;
+}
+.dashboard-tab {
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1976d2;
+  padding: 18px 36px 14px 36px;
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
+  margin-right: 2px;
+}
+.dashboard-tab.active {
+  color: #00233d;
+  border-bottom: 3px solid #1976d2;
+  background: #f8fafd;
+}
+
+.dashboard-main {
+  padding: 40px 4vw 0 4vw;
+  min-height: 400px;
+}
+
+/* Card Styles */
+.user-info-card,
+.settings-section,
+.trips-section,
+.trip-card,
+.hotel-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.06);
+  padding: 28px 24px;
+  margin-bottom: 28px;
+}
+.user-info-card h2,
+.settings-section h2,
+.trips-section h2 {
+  color: #1976d2;
+  margin-bottom: 18px;
+  font-size: 1.3rem;
+}
+
+/* Trip Cards */
+.trip-card {
+  margin-bottom: 32px;
+  border-left: 5px solid #1976d2;
+  padding-left: 18px;
+}
+.trip-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  color: #00233d;
+}
+.trip-hotels {
+  margin-left: 18px;
+}
+.hotel-card {
+  margin-bottom: 16px;
+  border-left: 4px solid #44a08d;
+  padding-left: 12px;
+  background: #f8fafd;
+}
+.hotel-card button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.hotel-card button:hover {
+  background: #00233d;
+}
+
+/* Settings Section Grid */
+.settings-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 28px;
+  margin-top: 18px;
+}
+.settings-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(25, 118, 210, 0.06);
+  padding: 24px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  transition: box-shadow 0.2s;
+}
+.settings-card:hover {
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.13);
+}
+.settings-card-header {
+  display: flex;
+  align-items: center;
+  font-size: 1.08rem;
+  font-weight: 600;
+  color: #1976d2;
+  margin-bottom: 18px;
+  gap: 10px;
+}
+.settings-icon {
+  font-size: 1.3rem;
+  color: #44a08d;
+  margin-right: 6px;
+}
+.settings-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.settings-input {
+  width: 100%;
+  padding: 9px 12px;
+  border-radius: 7px;
+  border: 1.5px solid #e3eaf3;
+  font-size: 1rem;
+  margin-bottom: 7px;
+  background: #f8fafd;
+  transition: border 0.2s;
+}
+.settings-input:focus {
+  border: 1.5px solid #1976d2;
+  outline: none;
+}
+.settings-btn {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 22px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.settings-btn:hover {
+  background: #00233d;
+}
+.settings-btn-secondary {
+  background: #f8fafd;
+  color: #1976d2;
+  border: 1.5px solid #e3eaf3;
+  margin-left: 10px;
+  margin-top: 0;
+}
+.settings-btn-secondary:hover {
+  background: #e3eaf3;
+  color: #00233d;
+}
+.linked-account-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  background: #f8fafd;
+  border-radius: 7px;
+  padding: 7px 12px;
+}
+.linked-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid #e3eaf3;
+}
+.default-badge {
+  background: #44a08d;
+  color: #fff;
+  border-radius: 8px;
+  padding: 2px 10px;
+  font-size: 0.85em;
+  margin-left: 8px;
+  font-weight: 600;
+}
+.switch-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+  color: #333;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  .dashboard-layout {
+    max-width: 98vw;
+    padding: 0 0 24px 0;
+  }
+  .dashboard-main {
+    padding: 24px 12px 0 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-layout {
+    width: 100vw;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    padding: 0 0 16px 0;
+  }
+  .dashboard-main {
+    padding: 18px 2vw 0 2vw;
+  }
+  .dashboard-tabs {
+    border-radius: 0;
+    padding-left: 0;
+  }
+  .dashboard-tab {
+    padding: 12px 16px 10px 16px;
+    font-size: 1rem;
+  }
+  .settings-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .settings-card {
+    min-height: 0;
+    padding: 14px 8px 10px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-main {
+    padding: 8px 2px 0 2px;
+  }
+  .user-info-card,
+  .settings-section,
+  .trips-section,
+  .trip-card,
+  .hotel-card {
+    padding: 12px 6px;
+    margin-bottom: 14px;
+  }
+  .trip-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

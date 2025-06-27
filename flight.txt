@@ -1,0 +1,17 @@
+            <FormGroup>
+              <label>{language === 'ar' ? 'عدد المسافرين' : 'Passengers'}</label>
+              <select>
+                <option value="1">1 {language === 'ar' ? 'مسافر' : 'Passenger'}</option>
+                <option value="2">2 {language === 'ar' ? 'مسافرين' : 'Passengers'}</option>
+                <option value="3">3 {language === 'ar' ? 'مسافرين' : 'Passengers'}</option>
+                <option value="4">4 {language === 'ar' ? 'مسافرين' : 'Passengers'}</option>
+              </select>
+            </FormGroup>
+            <FormGroup>
+              <label>{language === 'ar' ? 'الفئة' : 'Class'}</label>
+              <select>
+                <option value="economy">{language === 'ar' ? 'اقتصادية' : 'Economy'}</option>
+                <option value="business">{language === 'ar' ? 'رجال الأعمال' : 'Business'}</option>
+                <option value="first">{language === 'ar' ? 'الدرجة الأولى' : 'First Class'}</option>
+              </select>
+            </FormGroup>
